@@ -1,7 +1,7 @@
-<section class="weather__card">
-  <span class="city-name__text">
-    {{ name }}
-  </span>
+<section routerLink="/details/{{name}}" class="weather__card">
+  <span class="city-nametext">
+    <input (click)="$event.stopPropagation();" [(ngModel)]="name" (ngModelChange)="changeName(name)"  >
+ </span>
   <div class="weather-icon__container">
     <!-- Add weather icon depending on condition -->
     <i *ngIf="condition === 'rain'" class="fas fa-cloud-rain fa-10x"></i>
