@@ -10,6 +10,7 @@ import { DetailsComponent } from './details/details.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+import { IconWeatherComponent } from './icon-weather/icon-weather.component';
 registerLocaleData(localeFr, 'fr');
 
 @NgModule({
@@ -17,7 +18,8 @@ registerLocaleData(localeFr, 'fr');
     AppComponent,
     HomeComponent,
     CityWeatherComponent,
-    DetailsComponent
+    DetailsComponent,
+    IconWeatherComponent
   ],
   imports: [
     BrowserModule,
